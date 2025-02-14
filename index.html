@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h2 id="main_head">this is a heading</h2> -->
+    <!-- <button onclick="document.getElementById('main_head').innerHTML = 'This is a paragraph'">Click me</button> -->
+    <img id="bulb" src="pic_bulboff.gif" alt="Light bulb">
+    <button onclick="turnOn()">Turn on the light</button>
+    <button onclick="turnOff()">Turn off the light</button>
+    <script>
+        function turnOn() {
+   document.getElementById('bulb').src="pic_bulbon.gif"
+    }
+    function turnOff() {
+   document.getElementById('bulb').src="pic_bulboff.gif"
+    }
+    </script>
+</body>
+</html>
